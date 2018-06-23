@@ -5,11 +5,11 @@
 
 		if (!class_exists( 'WooCommerce' )) {
 			/* Deregister Scripts */
-			wp_deregister_script( 'jquery' );
+			wp_deregister_script( 'jquery' ); //deregistra funcion por defecto
 			wp_deregister_script( 'jquery-migrate' );
 
 			/* Register Scripts */
-			wp_register_script('jquery', get_theme_file_uri('/assets/js/lib/jquery.min.js'), null, '3.3.1', true);
+			wp_register_script('jquery', get_theme_file_uri('/assets/js/lib/jquery.min.js'), null, '3.3.1', true); 
 			wp_register_script('jquery-migrate', get_theme_file_uri('/assets/js/lib/jquery-migrate.min.js'), array('jquery'), '3.0.0', true);
 		}
 
