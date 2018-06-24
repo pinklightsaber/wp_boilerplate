@@ -7,6 +7,24 @@
 	<?php get_template_part('_includes/iOS', 'icons') ?>
 	<title><?php bloginfo('name') | bloginfo('description') ?></title> <!-- ver el titulo -->
 	<?php wp_head() ?>
+
+	<?php if(is_page('slider')) { ?>
+		<!-- css del flex -->
+	<style type="text/css"> 
+		.flex-caption {
+		  width: 96%;
+		  padding: 2%;
+		  left: 0;
+		  bottom: 0;
+		  background: rgba(0,0,0,.5);
+		  color: #fff;
+		  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+		  font-size: 14px;
+		  line-height: 18px;
+		}
+	</style>
+	<?php } ?>
+		
 </head>
 <body>
 

@@ -3,5 +3,14 @@
 <?php } ?>
 
 <?php wp_footer() ?>
+<?php if(is_page('slider')){?>
+	<script> //js de flexslider
+		$(window).load(function() {
+  			$('.flexslider').flexslider({
+    			animation: "slide"
+  			});
+		});
+	</script>
+<?php  } ?>
 </body>
 </html>
