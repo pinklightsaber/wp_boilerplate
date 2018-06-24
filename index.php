@@ -15,7 +15,7 @@
 		$get_arg->the_post();
 	?>
 	<li> 
-		<?php the_post_thumbnail('medium') ?>
+		<?php the_post_thumbnail('slideshow') ?>
 		<a href="<?php the_permalink() ?>">
 		<?php the_title() ?></a>
 		<?php the_excerpt() ?>
